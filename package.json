@@ -1,0 +1,22 @@
+{
+  "name": "com.meep.pay.pagseguro",
+  "version": "0.0.1",
+  "description": "",
+  "types": "./types/index.d.ts",
+  "cordova": {
+    "id": "com.meep.pay.pagseguro",
+    "platforms": [
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/meepapp/mepay-pagseguro-cordova"
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "author": "MePay Soluções em Pagamentos",
+  "license": "ISC"
+}
