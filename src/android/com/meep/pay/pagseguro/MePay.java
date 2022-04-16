@@ -7,6 +7,8 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import com.meep.pay.pagsseguro.TestLibrary;
+
 /**
  * This class echoes a string called from JavaScript.
  */
@@ -19,11 +21,19 @@ public class MePay extends CordovaPlugin {
             this.coolMethod(message, callbackContext);
             return true;
         }
+
+        if (action.equals("sum")) {
+            int a = args.getInt(0);
+            int b = args.getInt(1);
+            this.sum(a, b, callbackContext);
+            return true;
+        }
+
         return false;
     }
 
     public boolean sum(int a, int b, CallbackContext callbackContext) {
-        int c = a + b;
+        int c = TestLibrary.sum(a, b);
         callbackContext.success(c);
         return true;
     }

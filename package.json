@@ -1,6 +1,6 @@
 {
   "name": "com.meep.pay.pagseguro",
-  "version": "0.0.1",
+  "version": "0.0.4",
   "description": "",
   "types": "./types/index.d.ts",
   "cordova": {
