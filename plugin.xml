@@ -7,11 +7,11 @@
     <platform name="android">
         <config-file parent="/*" target="res/xml/config.xml">
             <feature name="MePay">
-                <param name="android-package" value="com.meep.pay.pagseguro" />
+                <param name="android-package" value="com.meep.pay.pagseguro.MePay" />
             </feature>
         </config-file>
         <config-file parent="/*" target="AndroidManifest.xml"></config-file>
-        <source-file src="src/android/com/meep/pay/pagseguro/MePay.java" target-dir="src/com/meep/pay/pagseguro" />
+        <source-file src="src/android/com/meep/pay/pagseguro/MePay.java" target-dir="src/com/meep/pay/pagseguro/MePay" />
         <resource-file src="src/android/libs/MeePay-release.aar" target="libs/MeePay-release.aar" />
         <framework src="src/android/MePay.gradle" custom="true" type="gradleReference" />
     </platform>
