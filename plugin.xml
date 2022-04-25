@@ -12,6 +12,7 @@
         </config-file>
         <config-file parent="/*" target="AndroidManifest.xml"></config-file>
         <source-file src="src/android/com/meep/pay/pagseguro/MePay.java" target-dir="src/com/meep/pay/pagseguro/MePay" />
+        <source-file src="src/android/com/meep/pay/pagseguro/ReturnType.java" target-dir="src/com/meep/pay/pagseguro/MePay" />
         <resource-file src="src/android/libs/MeePay-release.aar" target="libs/MeePay-release.aar" />
         <framework src="src/android/MePay.gradle" custom="true" type="gradleReference" />
     </platform>
